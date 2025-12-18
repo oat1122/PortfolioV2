@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/svg+xml" href="./images/favicon.svg" />
+
+  <!-- Put your site title here -->
+  <title>
+    Nuttawut Phosrithong | A Web Developer
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Model Viewer for 3D -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">My Skill</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Nuttawut Phosrithong</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>Web Developer | Data Science | Data Analyst</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <!-- Complaint Hub Project -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Complaint Hub</h3>
+              <p>
+                A complaint management system with real-time notifications (SSE), case tracking, statistical dashboard, and role-based access control.
+              </p>
+              <ul class="work__list">
+                <li>Next.js 15</li>
+                <li>Prisma ORM</li>
+                <li>Shadcn UI</li>
+                <li>SSE</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text" onclick="openDocDialog('compilhub'); return false;">
+                  Read More <span>→</span>
+                </a>
+                <a href="https://github.com/oat1122/complaint-hub" target="_blank" title="View Source Code">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <div class="gallery-grid">
+                <div class="gallery-item" data-gallery="report" data-index="0">
+                  <img src="./images/report/Screenshot 2025-12-18 095555.png" alt="Dashboard Overview">
+                  <span class="gallery-item__caption">Dashboard Overview</span>
+                </div>
+                <div class="gallery-item" data-gallery="report" data-index="1">
+                  <img src="./images/report/Screenshot 2025-12-18 095641.png" alt="Complaint Summary">
+                  <span class="gallery-item__caption">Complaint Summary Report</span>
+                </div>
+                <div class="gallery-item" data-gallery="report" data-index="2">
+                  <img src="./images/report/Screenshot 2025-12-18 095654.png" alt="Complaint Report">
+                  <span class="gallery-item__caption">Complaint Details Report</span>
+                </div>
+                <div class="gallery-item" data-gallery="report" data-index="3">
+                  <img src="./images/report/Screenshot 2025-12-18 095721.png" alt="Statistics Chart">
+                  <span class="gallery-item__caption">Complaint Statistics Chart</span>
+                </div>
+                <div class="gallery-item" data-gallery="report" data-index="4">
+                  <img src="./images/report/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.png" alt="Login Page">
+                  <span class="gallery-item__caption">Login Page</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="work__divider">
+
+          <!-- Account System Project -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>TNP Accounting Module</h3>
+              <p>
+                A comprehensive accounting system for managing quotations, invoices, delivery notes, and PDF generation with Thai localization.
+              </p>
+              <ul class="work__list">
+                <li>React + Vite</li>
+                <li>Laravel</li>
+                <li>Redux Toolkit</li>
+                <li>MUI v6</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text" onclick="openDocDialog('account'); return false;">
+                  Read More <span>→</span>
+                </a>
+                <a href="https://github.com/oat1122/TNP-FormHelpers/tree/main/tnp-frontend/src/pages/Accounting" target="_blank" title="View Source Code">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <div class="gallery-grid">
+                <div class="gallery-item" data-gallery="account" data-index="0">
+                  <img src="./images/account/Screenshot 2025-12-18 100543.png" alt="Quotation Dialog">
+                  <span class="gallery-item__caption">Quotation Dialog</span>
+                </div>
+                <div class="gallery-item" data-gallery="account" data-index="1">
+                  <img src="./images/account/Screenshot 2025-12-18 100624.png" alt="Create Quotation Form">
+                  <span class="gallery-item__caption">Create Quotation Form (1)</span>
+                </div>
+                <div class="gallery-item" data-gallery="account" data-index="2">
+                  <img src="./images/account/Screenshot 2025-12-18 100636.png" alt="Create Quotation Form">
+                  <span class="gallery-item__caption">Create Quotation Form (2)</span>
+                </div>
+                <div class="gallery-item" data-gallery="account" data-index="3">
+                  <img src="./images/account/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (1).png" alt="PDF Quotation">
+                  <span class="gallery-item__caption">Generated PDF Quotation</span>
+                </div>
+                <div class="gallery-item" data-gallery="account" data-index="4">
+                  <img src="./images/account/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (2).png" alt="Customer Data">
+                  <span class="gallery-item__caption">Customer Quotation History</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="work__divider">
+
+          <!-- Preparing-income-and-expense-accounts -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Preparing-income-and-expense-accounts</h3>
+              <p>
+                This is a simple web application for tracking personal income and expenses. Users can add, view, and delete financial transactions, along with a clear overview of their balance, total income, and total expenses.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/oat1122/Preparing-income-and-expense-accounts" target="_blank" class="link__text">
+                  View More <span>→</span>
+                </a>
+                <a>
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Loogo/Preparing.png" class="work__image" alt="Project 3">
+            </div>
+          </div>
+
+          <hr class="work__divider">
+
+          <!-- Google Play Store Analysis -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Google Play Store Analysis</h3>
+              <p>
+                This project involves Exploratory Data Analysis (EDA) and Feature Engineering on the Google Play Store dataset to identify trends such as popular app categories, the most downloaded apps, and other valuable insights.
+              </p>
+              <ul class="work__list">
+                <li>Pandas</li>
+                <li>Numpy</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/oat1122/GooglePlayAnalysis" target="_blank" class="link__text">
+                  View More <span>→</span>
+                </a>
+                <a title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <img src="./images/sadassaddasd.png" class="work__image" alt="Project 1">
+            </div>
+          </div>
+
+<hr class="work__divider">
+
+          <!-- Power BI Dashboard for PRISM INSURANCE -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Power BI Dashboard for PRISM INSURANCE</h3>
+              <p>
+                To learn how to create a Dashboard for tracking, analyzing, and summarizing customer data, insurance policies, and insurance claim statuses for PRISM INSURANCE company using the Power BI tool, so that executives and teams can use the data for effective decision-making.
+              </p>
+              <ul class="work__list">
+                <li>Microsoft SQL Server</li>
+                <li>Power BI Desktop</li>
+                <li>CSV Files</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://drive.google.com/file/d/1K567ukSA7L4pgA2xpIlD45JSJmAPFkF3/view?usp=sharing" target="_blank" class="link__text">
+                  View More <span>→</span>
+                </a>
+                <a title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <img src="./images/Dashboard ประกัน.png" class="work__image" alt="Project 1">
+            </div>
+          </div>
+
+<hr class="work__divider">
+
+          <!-- Chat App -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Chat App</h3>
+              <p>
+                This project is a real-time chat application developed using React + Vite (Frontend) and Node.js + Express + MongoDB (Backend). It supports sending text messages, images, changing themes, and displaying online status.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/oat1122/fullstack-chat-app" target="_blank" class="link__text">
+                  View More <span>→</span>
+                </a>
+                <a title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <img src="./images/appChat.png" class="work__image" alt="Project 1">
+            </div>
+          </div>
+
+<hr class="work__divider">
+
+          <!-- Product Store -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Product Store</h3>
+              <p>
+                This project is a full-stack web application developed using the MERN stack (MongoDB, Express, React, Node.js) for simple product data management. It includes CRUD (Create, Read, Update, Delete) functionality for products.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/oat1122/mern-crash-course/tree/main" target="_blank" class="link__text">
+                  View More <span>→</span>
+                </a>
+                <a title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <img src="./images/Loogo/crudfull.png" class="work__image" alt="Project 1">
+            </div>
+          </div>
+
+<hr class="work__divider">
+
+          <!-- Django-E-commerce -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Django-E-commerce</h3>
+              <p>
+                This Django 4 e-commerce application offers core features for product management, user authentication, and a shopping cart.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python Django</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/oat1122/Django-E-commerce" target="_blank" class="link__text">
+                  View More <span>→</span>
+                </a>
+                <a title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <img src="./images/Django-E-commerce.png" class="work__image" alt="Project 1">
+            </div>
+          </div>
+
+<hr class="work__divider">
+
+          <!-- Pig-Game -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Pig-Game</h3>
+              <p>
+                A two-player dice game built with HTML, CSS, and JavaScript.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/oat1122/Pig-Game?tab=readme-ov-file" target="_blank" class="link__text">
+                  View More <span>→</span>
+                </a>
+                <a>
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Piggame.png" class="work__image" alt="Project 1">
+            </div>
+          </div>
+
+<hr class="work__divider">
+
+          <!-- Blog Capstone -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Blog Capstone</h3>
+              <p>
+                Basics of web application development with Node.js and Express.js using EJS as the Template Engine.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>ExpressJs</li>
+                <li>EJS</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/oat1122/blog-capstone" target="_blank" class="link__text">
+                  View More <span>→</span>
+                </a>
+                <a>
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Loogo/ejscrud.png" class="work__image" alt="Project 3">
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>My Skill</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/Loogo/javascriplogo.png" class="client__logo" alt="Company 2" />
+          <img src="./images/Loogo/node-js-icon-1817x2048-g8tzf91e.png" class="client__logo" alt="Company 3" />
+          <img src="./images/Loogo/nextjslogo.png" class="client__logo" alt="Company 1" />
+          <img src="./images/Loogo/reactlogo.png" class="client__logo" alt="Company 1" />
+          <img src="./images/Loogo/Python-Logo.jpg" class="client__logo" alt="Company 1" />
+          <img src="./images/Loogo/django-icon.svg" class="client__logo" alt="Company 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I am a recent graduate seeking employment, possessing foundational skills in various programming languages and frameworks, including Python, Django, NumPy, Pandas, Matplotlib, Scikit-learn, JavaScript, Node.js, Express, React, C++, and SQL.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="https://drive.google.com/file/d/1e28q7tNXuYoCczl0YkRt3WeO1KHlqaVE/view?usp=sharing" target="_blank" class="btn">My Resume Th</a>
+            <a href="https://drive.google.com/file/d/1X6HyuwsBK0YRMxQy4Cj6U5uhyM71TZm3/view?usp=sharing" target="_blank" class="btn">My Resume En</a>
+            <a href="https://drive.google.com/file/d/1KZnQWapvLQf_Z4frgo9hIhHcyo-stkjy/view?usp=sharing" target="_blank" class="btn">My Resume Cv</a>
+
+          </div>
+
+          <div class="about__photo-container">
+            <!-- 3D Models Container -->
+            <div class="models-3d-container">
+              <model-viewer 
+                src="./3d/react_logo_circle.glb"
+                alt="3D React Logo"
+                auto-rotate
+                rotation-per-second="30deg"
+                interaction-prompt="none"
+                style="width: 200px; height: 200px; background: transparent;"
+              ></model-viewer>
+              <model-viewer 
+                src="./3d/laravel.glb"
+                alt="3D Laravel Logo"
+                auto-rotate
+                rotation-per-second="25deg"
+                interaction-prompt="none"
+                style="width: 140px; height: 140px; background: transparent;"
+              ></model-viewer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          I am a recent graduate looking for opportunities in various technology fields, including Web Development, Software Engineering, Data Science, and Data Analysis. With my interest and fundamental knowledge in these areas, I am eager to learn and develop my skills to grow in challenging roles. If you are looking for a new team member who is highly motivated and adaptable, or if you have any advice for a fresh graduate interested in these fields, please feel free to contact me via email. I am always happy to chat and learn from your experience.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:nutthawut1.pho@gmail.com" class="btn">nutthawut1.pho@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+
+        <li class="footer__social-link-item">
+          <a href="https://github.com/oat1122" title="Link to Github Profile" target="_blank">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+ 
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/nutthawut-phosrithong-a554312b1/" target="_blank" >
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+  <script src="./gallery.js"></script>
+
+  <!-- Documentation Dialog -->
+  <div id="docDialog" class="doc-dialog">
+    <div class="doc-dialog__overlay" onclick="closeDocDialog()"></div>
+    <div class="doc-dialog__content">
+      <button class="doc-dialog__close" onclick="closeDocDialog()">&times;</button>
+      <div id="docDialogBody" class="doc-dialog__body">
+        <!-- Content will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Documentation content
+    const docContent = {
+      compilhub: `
+        <h2>Complaint Hub - Core Functionality Module</h2>
+        <p>A centralized complaint management system for receiving complaints, real-time status updates, and statistical analysis. Built with <strong>Next.js 15 App Router</strong> and <strong>Prisma ORM</strong>.</p>
+        
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="doc-icon"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg> Features</h3>
+        <ul>
+          <li><strong>Complaint Submission</strong> - Form with Zod validation and file upload support</li>
+          <li><strong>Real-time Notifications</strong> - Staff alerts via Server-Sent Events (SSE)</li>
+          <li><strong>Case Tracking</strong> - Track status using unique Tracking Number</li>
+          <li><strong>Statistical Dashboard</strong> - Visualize trends with Recharts</li>
+          <li><strong>Role-Based Access</strong> - Admin, Manager, Staff permissions</li>
+          <li><strong>Data Export</strong> - Export complaints for external reporting</li>
+        </ul>
+        
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="doc-icon"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path></svg> Tech Stack</h3>
+        <p><strong>Frontend:</strong> Next.js 15, Shadcn UI, Tailwind CSS, Recharts, React Hook Form</p>
+        <p><strong>Backend:</strong> API Routes, Prisma ORM (PostgreSQL), NextAuth.js, SSE</p>
+        
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="doc-icon"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg> Role-Based Access</h3>
+        <ul>
+          <li><strong>ADMIN</strong> - Full access to all data and settings</li>
+          <li><strong>MANAGER</strong> - Manage cases in their department</li>
+          <li><strong>STAFF</strong> - Update case status and add notes</li>
+        </ul>
+        
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="doc-icon"><line x1="6" x2="6" y1="3" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg> Workflow</h3>
+        <p>User Submits → Auto-Notification → Officer Updates → User Tracks Status</p>
+        
+        <p><em>Version: 1.0.0 | Last Updated: December 2025</em></p>
+      `,
+      
+      account: `
+        <h2>TNP Accounting Module</h2>
+        <p>A comprehensive Accounting Management System developed using <strong>React + Vite</strong> (Frontend) and <strong>Laravel</strong> (Backend). Supports quotations, invoices, delivery notes, and PDF generation.</p>
+        
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="doc-icon"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg> Features</h3>
+        <ul>
+          <li><strong>Pricing Integration</strong> - Import pricing data from CRM to create quotations</li>
+          <li><strong>Quotation Management</strong> - Create, edit, approve, send, and track status</li>
+          <li><strong>Invoice Management</strong> - Link with quotations, automatic VAT calculation</li>
+          <li><strong>Delivery Notes</strong> - Print multiple PDF formats, bundle download</li>
+          <li><strong>PDF Generation</strong> - Generate PDF for all document types</li>
+          <li><strong>Thai Localization</strong> - Thai language, Baht format, Thai date</li>
+        </ul>
+        
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="doc-icon"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path></svg> Tech Stack</h3>
+        <p><strong>Frontend:</strong> React 18 + Vite, Redux Toolkit, MUI v6, React Hook Form</p>
+        <p><strong>Backend:</strong> Laravel (PHP), MySQL, RESTful API</p>
+        
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="doc-icon"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg> Role-Based Access</h3>
+        <ul>
+          <li><strong>ADMIN</strong> - Full system access and configuration</li>
+          <li><strong>ACCOUNT</strong> - Manage invoices and financial documents</li>
+          <li><strong>SALE</strong> - Create quotations and view pricing</li>
+        </ul>
+        
+        <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="doc-icon"><line x1="6" x2="6" y1="3" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg> Workflow</h3>
+        <p>Pricing Request → Quotation → Invoice → Delivery Note</p>
+        
+        <p><em>Version: 0.0.104 | Last Updated: December 2025</em></p>
+      `
+    };
+
+    function openDocDialog(docId) {
+      const dialog = document.getElementById('docDialog');
+      const body = document.getElementById('docDialogBody');
+      
+      if (docContent[docId]) {
+        body.innerHTML = docContent[docId];
+        dialog.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        // Initialize Lucide icons in dialog
+        if (typeof lucide !== 'undefined') {
+          lucide.createIcons();
+        }
+      }
+    }
+
+    function closeDocDialog() {
+      const dialog = document.getElementById('docDialog');
+      dialog.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDocDialog();
+    });
+  </script>
+</body>
+
+</html>

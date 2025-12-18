@@ -1,0 +1,128 @@
+body {
+  background: rgb(29, 40, 41);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(29, 40, 41, 1) 0%,
+    rgba(24, 30, 31, 1) 11%,
+    rgba(19, 19, 20, 1) 41%,
+    rgba(19, 19, 20, 1) 58%,
+    rgba(24, 30, 31, 1) 85%,
+    rgba(29, 40, 41, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(29, 40, 41, 1) 0%,
+    rgba(24, 30, 31, 1) 11%,
+    rgba(19, 19, 20, 1) 41%,
+    rgba(19, 19, 20, 1) 58%,
+    rgba(24, 30, 31, 1) 85%,
+    rgba(29, 40, 41, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(29, 40, 41, 1) 0%,
+    rgba(24, 30, 31, 1) 11%,
+    rgba(19, 19, 20, 1) 41%,
+    rgba(19, 19, 20, 1) 58%,
+    rgba(24, 30, 31, 1) 85%,
+    rgba(29, 40, 41, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d2829",endColorstr="#1d2829",GradientType=1);
+
+  color: white;
+  padding: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.contact-btn {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: rgba(143, 143, 143, 0.2);
+  border: 1px solid rgba(102, 102, 102, 0.2);
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  transform: 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #76b0ab37;
+}
+
+/* MAIN SECTION */
+
+main {
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 85vh; /* แก้ไขจาก 'min' */
+}
+
+.title-section {
+  margin-top: 3rem;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 12rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 1;
+  background-image: linear-gradient(rgb(133, 133, 133), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+}
+
+.location {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.location p {
+  background-image: linear-gradient(to right, #76b0ab, #842626);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* สำหรับรองรับเบราว์เซอร์ที่ใช้ WebKit */
+  font-size: 1.5rem;
+}
+.bio-section {
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+.bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: 1px;
+  max-width: 22rem;
+}
+
+
+.work__image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
